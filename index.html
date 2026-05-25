@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nigerian Invoice Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>💼 Nigerian Invoice Generator</h1>
+    <p style="text-align: center; color: #666; margin-bottom: 30px;">For Small Businesses & Freelancers</p>
+
+    <div class="invoice-form">
+      <h2>Invoice Details</h2>
+      
+      <input type="text" id="businessName" placeholder="Your Business Name" value="My Shop">
+      <input type="text" id="clientName" placeholder="Client/Customer Name" value="John Doe">
+      <input type="text" id="invoiceNumber" placeholder="Invoice Number" value="INV-001">
+
+      <h3 style="margin: 25px 0 10px 0;">Items</h3>
+      <div id="items-container"></div>
+
+      <button onclick="addNewItem()" style="background:#3498db; margin:15px 0;">+ Add Item</button>
+      <button onclick="generateInvoice()" style="background:#27ae60;">Generate Invoice</button>
+    </div>
+
+    <div id="invoicePreview" class="invoice-preview"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
